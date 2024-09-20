@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Room | Classroom Management</title>
+    <link rel="stylesheet" href="../css/view-room.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <button class="back-btn" onclick="window.history.back()">←</button>
+            <h1 class="college-name">Your College Name</h1>
+            <div class="user-tab">
+                <span>Welcome, User</span>
+                <img src="../images/user-icon.png" alt="User Icon" class="user-icon">
+            </div>
+        </div>
+    </nav>
+
+    <!-- Room Details Section -->
+    <div class="room-details-container">
+        <img id="room-image" src="../images/room-placeholder.jpg" alt="Room Image" class="room-image">
+        <h2 id="room-number">Room 101</h2>
+        <p id="floor-number">Floor: 1</p>
+        <p id="capacity">Capacity: 30</p>
+        <p id="more-info">More Info: Air-conditioned, Projector Available</p>
+        <button class="btn-book-now" onclick="window.location.href='room-confirmation.html'">Book Now</button>
+    </div>
+
+    <!-- Bottom Navigation -->
+    <nav class="bottom-nav">
+        <div class="bottom-nav-item" onclick="window.location.href='home.html'">
+            <img src="../images/home-icon.svg" alt="Home Icon">
+            <span>Home</span>
+        </div>
+        <div class="bottom-nav-item" onclick="window.location.href='quick-booking.html'">
+            <img src="../images/booking-icon.svg" alt="Quick Booking Icon">
+            <span>Quick Booking</span>
+        </div>
+        <div class="bottom-nav-item" onclick="window.location.href='upcoming-bookings.html'">
+            <img src="../images/upcoming-icon.svg" alt="Upcoming Bookings Icon">
+            <span>Upcoming Bookings</span>
+        </div>
+    </nav>
+
+    <script src="../js/view-room.js"></script>
+</body>
+</html>

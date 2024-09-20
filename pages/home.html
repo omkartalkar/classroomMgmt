@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Classroom Management</title>
+    <link rel="stylesheet" href="../css/home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <h1 class="college-name">Your College Name</h1>
+            <div class="user-tab">
+                <span>Welcome, User</span>
+                <img src="../images/user-icon.png" alt="User Icon" class="user-icon">
+            </div>
+        </div>
+    </nav>
+
+    <!-- Filter Section -->
+    <div class="filter-section">
+        <div class="filter-group">
+            <label for="classroom-size">Classroom Size</label>
+            <select id="classroom-size">
+                <option value="all">All Sizes</option>
+                <option value="small">Small (0-20)</option>
+                <option value="medium">Medium (20-50)</option>
+                <option value="large">Large (50+)</option>
+            </select>
+        </div>
+        <div class="filter-group">
+            <label for="floor">Floor</label>
+            <select id="floor">
+                <option value="all">Any Floor</option>
+                <option value="1">1st Floor</option>
+                <option value="2">2nd Floor</option>
+                <option value="3">3rd Floor</option>
+            </select>
+        </div>
+        <div class="filter-group">
+            <label for="projector">Projector</label>
+            <input type="checkbox" id="projector">
+        </div>
+        <div class="filter-group">
+            <label for="ac">Air Conditioning</label>
+            <input type="checkbox" id="ac">
+        </div>
+    </div>
+
+    <!-- Classroom Cards -->
+    <div class="room-cards-container">
+        <div class="room-card" onclick="window.location.href='view-room.html'">
+            <img src="../images/classroom1.jpg" alt="Classroom Image">
+            <div class="room-details">
+                <h3>Room 101</h3>
+                <p>Capacity: 30</p>
+                <p>Floor: 1</p>
+                <button class="btn-view">View Room</button>
+            </div>
+        </div>
+
+        <div class="room-card" onclick="window.location.href='view-room.html'">
+            <img src="../images/classroom1.jpg" alt="Classroom Image">
+            <div class="room-details">
+                <h3>Room 101</h3>
+                <p>Capacity: 30</p>
+                <p>Floor: 1</p>
+                <button class="btn-view">View Room</button>
+            </div>
+        </div>
+
+        <div class="room-card" onclick="window.location.href='view-room.html'">
+            <img src="../images/classroom1.jpg" alt="Classroom Image">
+            <div class="room-details">
+                <h3>Room 101</h3>
+                <p>Capacity: 30</p>
+                <p>Floor: 1</p>
+                <button class="btn-view">View Room</button>
+            </div>
+        </div>
+
+        <div class="room-card" onclick="window.location.href='view-room.html'">
+            <img src="../images/classroom1.jpg" alt="Classroom Image">
+            <div class="room-details">
+                <h3>Room 101</h3>
+                <p>Capacity: 30</p>
+                <p>Floor: 1</p>
+                <button class="btn-view">View Room</button>
+            </div>
+        </div>
+
+        <div class="room-card" onclick="window.location.href='view-room.html'">
+            <img src="../images/classroom1.jpg" alt="Classroom Image">
+            <div class="room-details">
+                <h3>Room 101</h3>
+                <p>Capacity: 30</p>
+                <p>Floor: 1</p>
+                <button class="btn-view">View Room</button>
+            </div>
+        </div>
+
+        <div class="room-card" onclick="window.location.href='view-room.html'">
+            <img src="../images/classroom1.jpg" alt="Classroom Image">
+            <div class="room-details">
+                <h3>Room 101</h3>
+                <p>Capacity: 30</p>
+                <p>Floor: 1</p>
+                <button class="btn-view">View Room</button>
+            </div>
+        </div>
+
+        <div class="room-card" onclick="window.location.href='view-room.html'">
+            <img src="../images/classroom1.jpg" alt="Classroom Image">
+            <div class="room-details">
+                <h3>Room 101</h3>
+                <p>Capacity: 30</p>
+                <p>Floor: 1</p>
+                <button class="btn-view">View Room</button>
+            </div>
+        </div>
+
+        <div class="room-card" onclick="window.location.href='view-room.html'">
+            <img src="../images/classroom1.jpg" alt="Classroom Image">
+            <div class="room-details">
+                <h3>Room 101</h3>
+                <p>Capacity: 30</p>
+                <p>Floor: 1</p>
+                <button class="btn-view">View Room</button>
+            </div>
+        </div>
+
+        <div class="room-card" onclick="window.location.href='view-room.html'">
+            <img src="../images/classroom1.jpg" alt="Classroom Image">
+            <div class="room-details">
+                <h3>Room 101</h3>
+                <p>Capacity: 30</p>
+                <p>Floor: 1</p>
+                <button class="btn-view">View Room</button>
+            </div>
+        </div>
+        <!-- Repeat the same structure for more room cards (up to 10 rooms)... -->
+    </div>
+
+    <!-- Bottom Navigation -->
+    <nav class="bottom-nav">
+        <div class="bottom-nav-item" onclick="window.location.href='home.html'">
+            <img src="../images/home-icon.svg" alt="Home Icon">
+            <span>Home</span>
+        </div>
+        <div class="bottom-nav-item" onclick="window.location.href='quick-booking.html'">
+            <img src="../images/booking-icon.svg" alt="Quick Booking Icon">
+            <span>Quick Booking</span>
+        </div>
+        <div class="bottom-nav-item" onclick="window.location.href='upcoming-bookings.html'">
+            <img src="../images/upcoming-icon.svg" alt="Upcoming Bookings Icon">
+            <span>Upcoming Bookings</span>
+        </div>
+    </nav>
+
+    <script src="../js/app.js"></script>
+</body>
+</html>

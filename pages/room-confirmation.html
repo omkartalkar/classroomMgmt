@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room Confirmation | Classroom Management</title>
+    <link rel="stylesheet" href="../css/room-confirmation.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <button class="back-btn" onclick="window.history.back()">←</button>
+            <h1 class="college-name">Your College Name</h1>
+            <div class="user-tab">
+                <span>Welcome, User</span>
+                <img src="../images/user-icon.png" alt="User Icon" class="user-icon">
+            </div>
+        </div>
+    </nav>
+
+    <!-- Booking Confirmation Section -->
+    <div class="confirmation-container">
+        <h2>Booking Confirmed</h2>
+        <p id="confirmation-details">Room details will appear here.</p>
+        <button class="btn-share" onclick="shareBooking()">Share Booking</button>
+    </div>
+
+    <!-- Bottom Navigation -->
+    <nav class="bottom-nav">
+        <div class="bottom-nav-item" onclick="window.location.href='home.html'">
+            <img src="../images/home-icon.svg" alt="Home Icon">
+            <span>Home</span>
+        </div>
+        <div class="bottom-nav-item" onclick="window.location.href='quick-booking.html'">
+            <img src="../images/booking-icon.svg" alt="Quick Booking Icon">
+            <span>Quick Booking</span>
+        </div>
+        <div class="bottom-nav-item" onclick="window.location.href='upcoming-bookings.html'">
+            <img src="../images/upcoming-icon.svg" alt="Upcoming Bookings Icon">
+            <span>Upcoming Bookings</span>
+        </div>
+    </nav>
+
+    <script src="../js/room-confirmation.js"></script>
+</body>
+</html>

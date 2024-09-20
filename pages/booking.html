@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room Booking</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <button onclick="goBack()">Back</button>
+        <h1>College Name</h1>
+    </nav>
+
+    <div class="booking-form">
+        <h2>Room No: 101</h2>
+        <p>Capacity: 50</p>
+        <p>Floor No: 2</p>
+
+        <label for="date">Select Date:</label>
+        <input type="date" id="date" required>
+
+        <label for="time">Select Time Slot:</label>
+        <input type="time" id="time" required>
+
+        <button onclick="confirmBooking()">Confirm Booking</button>
+    </div>
+
+    <script src="../js/app.js"></script>
+</body>
+</html>
